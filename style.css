@@ -69,7 +69,6 @@ nav{
 @media screen and (max-width:768px){
   body{
     overflow-x: hidden;
-    visibility: hidden;
   }
   .nav-links{
     position: absolute;
@@ -91,10 +90,14 @@ nav{
   .burger{
     display: block;
   }
+  .nav{
+    /*visibility: hidden;*/
+  }
 }
 
 .nav-active{
   transform: translateX(0%);
+  visibility: visible;
 }
 
 @keyframes navLinkFade{
@@ -106,6 +109,7 @@ nav{
   to{
     opacity: 1;
     transform: translateX(0px);
+    visibility: visible;
   }
 }
 
