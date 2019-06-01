@@ -71,7 +71,7 @@ nav{
     overflow-x: hidden;
   }
   .nav-links{
-    position: absolute;
+    position: fixed;
     right: 0px;
     height: 92vh;
     top: 8vh;
@@ -82,7 +82,6 @@ nav{
     width: 50%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    visibility: hidden;
     float: left;
   }
   .nav-links li{
@@ -98,7 +97,6 @@ nav{
 
 .nav-active{
   transform: translateX(0%);
-  visibility: visible;
 }
 
 @keyframes navLinkFade{
