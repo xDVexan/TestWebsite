@@ -83,7 +83,7 @@ nav{
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     visibility: hidden;
-    float: right;
+    float: left;
   }
   .nav-links li{
     opacity: 0;
@@ -98,7 +98,6 @@ nav{
 
 .nav-active{
   transform: translateX(0%);
-  float: left;
   visibility: visible;
 }
 
